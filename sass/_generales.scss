@@ -1,0 +1,49 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: louis george cafe;
+    src: url(../assets/fonts/Louis\ George\ Cafe.ttf);
+}
+
+body {
+    font-family: louis george cafe;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.cabezeraImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include sizes (40vh, auto);
+    position: relative;
+    overflow: hidden;
+
+    img {
+        @include sizes (100%,100%);
+        object-fit: cover;
+        opacity: 0.8;
+    }
+
+    .capa {
+        @include sizes (100%,100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        transform: scale(1);
+    }
+}  
+

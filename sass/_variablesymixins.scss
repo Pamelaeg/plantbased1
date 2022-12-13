@@ -1,0 +1,20 @@
+/*variable basica*/
+
+$color-primary: #475176;
+$color-secundary: #fcf3f6;
+
+/*extend*/
+.style-img {margin: 5px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
+    max-height: auto;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.10);
+}
+
+/*mixin*/
+
+@mixin sizes ($height, $width) {
+    height: $height;
+    width: $width;
+}

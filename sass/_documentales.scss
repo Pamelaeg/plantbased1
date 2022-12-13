@@ -1,0 +1,70 @@
+main {
+    .listadoDocumentales {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        width: 100%;
+        margin-bottom: 40px;
+
+        @media screen and (min-width: 820px) {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 5fr;
+            width: 100%;
+        }
+
+        .documental {
+            border-radius: 20px;
+            background-color: rgb(250, 242, 242);
+            color: black;
+            margin: 20px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: auto;
+
+            h2 {
+                font-size: 16px;
+                font-weight: bold;
+
+                @media screen and (min-width: 620px) {
+                    font-size: 20px;
+                }
+            }
+
+            .parrafoVideo {
+                margin: 8px;
+                font-size: 14px;
+                text-align: center;
+
+                @media screen and (min-width: 620px) {
+                    font-size: 16px;
+                }
+            }
+
+            iframe {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                margin: 5px auto;
+                width: 530;
+                height: auto;
+                max-width: 100%;
+                max-height: auto;
+                border-radius: 20px;
+
+                @media screen and (min-width: 820px) {
+                    width: 500px;
+                    height: 250px;
+                }
+
+                @media screen and (min-width: 320px) and (max-width: 819px) {
+                    width: 500px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,131 @@
+main {
+    .contenidoRrr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 25px 60px 25px;
+
+        .tituloSectionRrr {
+            text-align: center;
+            margin: 40px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 22px;
+
+            @media screen and (min-width: 620px) {
+                font-size: 25px;
+            }
+
+            @media screen and (min-width: 820px) {
+                font-size: 30px;
+            }
+
+            @media screen and (min-width: 820px) {
+                font-size: 30px;
+            }
+        }
+
+
+        .p1,
+        .p2 {
+            text-align: start;
+            font-size: 14px;
+
+            @media screen and (min-width: 620px) {
+                font-size: 15px;
+            }
+
+            @media screen and (min-width: 820px) {
+                text-align: center;
+                font-size: 19px;
+            }
+        }
+
+
+
+        .videoRrr {
+            border-radius: 20px;
+            line-height: 0%;
+            margin-top: 25px;
+            width: 500px;
+            height: 250px;
+            max-width: 100%;
+            max-height: 100%;
+
+            @media screen and (min-width: 820px) {
+                margin-top: 25px;
+                @include sizes (500px, 900px);
+            }
+
+            @media screen and (min-width: 320px) and (max-width: 819px) {
+                margin-top: 25px;
+                @include sizes (400px, 800px);
+                max-width: 100%;
+            }
+        }
+    }
+
+    .otrosIntereses {
+hr{margin-left: 10%;
+margin-right: 10%;}
+
+        h3 {
+            text-align: center;
+            color: $color-primary;
+            font-weight: bold;
+            font-size: 22px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+
+            @media screen and (min-width:720px) {
+                font-size: 27px;
+            }
+        }
+    }
+
+    .enlacesExternos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1100px;
+        margin-bottom: 10%;
+
+        @media screen and (min-width:720px) {
+            margin: auto auto 5% auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        .card {@include sizes (auto, 100%);
+            position: relative;
+            overflow:hidden;
+            max-width: 70vw;
+            margin: 20px;
+
+            a{text-decoration: none;}
+            
+            
+            img{                
+                @include sizes (auto, 100%);
+            }
+            .nota{
+                padding: 10px;
+            h4{color: black;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 18px;}
+    }
+                
+            .parrafoCard {color: black;
+            text-align: start;
+            font-weight: lighter;
+        text-decoration: none;
+        font-size: 16px;
+        }
+    }
+}
+}

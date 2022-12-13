@@ -1,0 +1,92 @@
+
+
+.grillaAli {
+    margin-bottom: 50px;
+
+    .contenidoAli {
+        .artAli {
+            margin: 40px;
+        }
+    }
+
+    .tituloAli {
+        margin: 40px 3px 40px 3px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 22px;
+
+        @media screen and (min-width: 620px) {
+            font-size: 25px;
+        }
+
+        @media screen and (min-width: 820px) {
+            font-size: 30px;
+        }
+
+        @media screen and (min-width: 820px) {
+            font-size: 30px;
+        }
+    }
+
+
+    .parrafoAli {
+        text-align: center;
+        font-size: 14px;
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 1,5;
+
+        @media screen and (min-width: 620px) {
+            font-size: 15px;
+        }
+
+        @media screen and (min-width: 820px) {
+            text-align: center;
+            font-size: 19px;
+        }
+    }
+
+    .galeria {
+        display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+        div {
+        .imgAli {
+            @extend .style-img;
+
+            @media screen and (min-width: 420px) {
+                @include sizes (auto, 400px);
+            }
+
+            @media screen and (min-width: 620px) {
+                @include sizes (auto, 500px);
+            }
+
+            @media screen and (min-width: 830px) {
+                @include sizes (auto, 400px);               
+            }
+
+            @media screen and (min-width: 980px) {
+                @include sizes (auto, 420px);
+                margin: 20px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                width: 500px;
+            }
+
+            @media screen and (min-width: 1500px) {
+                width: 400px;
+            }
+
+            @media screen and (min-width: 1600px) {
+                width: 500px;
+            }
+        }
+    }
+}
+}

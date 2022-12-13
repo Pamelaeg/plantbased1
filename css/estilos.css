@@ -1,0 +1,578 @@
+/*variable basica*/
+/*extend*/
+.style-img, .grillaAli .galeria div .imgAli {
+  margin: 5px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 100%;
+  max-height: auto;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*mixin*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: louis george cafe;
+  src: url(../assets/fonts/Louis\ George\ Cafe.ttf);
+}
+body {
+  font-family: louis george cafe;
+  position: relative;
+  padding-bottom: 3em;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.cabezeraImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+}
+.cabezeraImg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+}
+.cabezeraImg .capa {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  transform: scale(1);
+}
+
+header, footer {
+  background-color: #475176;
+}
+
+header {
+  font-size: 15px;
+  opacity: 0.9;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.logo {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-right: 0%;
+    width: 0%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-right: 0%;
+    width: 0%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+main {
+  margin-bottom: auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.iconoRedes {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.textSlide {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.bienvenida h3 {
+  text-align: center;
+  color: #475176;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 720px) {
+  .bienvenida h3 {
+    font-size: 27px;
+  }
+}
+
+.atajos {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 10%;
+}
+@media screen and (min-width: 720px) {
+  .atajos {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.atajos .accesos {
+  height: 200px;
+  width: 70%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+}
+@media screen and (min-width: 400px) and (max-width: 719px) {
+  .atajos .accesos {
+    height: 500px;
+    width: 70%;
+    max-height: 100%;
+  }
+}
+@media screen and (min-width: 720px) {
+  .atajos .accesos {
+    height: 400px;
+    width: 100vh;
+    max-width: 100vh;
+  }
+}
+@media screen and (min-width: 900px) {
+  .atajos .accesos {
+    height: 500px;
+    width: 100vh;
+  }
+}
+.atajos .accesos img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.atajos .accesos .capa {
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+.atajos .accesos .capa h4 {
+  font-size: 30px;
+  text-align: center;
+}
+.atajos .accesos :hover .capa {
+  transform: scale(1);
+}
+
+.grillaAli {
+  margin-bottom: 50px;
+}
+.grillaAli .contenidoAli .artAli {
+  margin: 40px;
+}
+.grillaAli .tituloAli {
+  margin: 40px 3px 40px 3px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 22px;
+}
+@media screen and (min-width: 620px) {
+  .grillaAli .tituloAli {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 820px) {
+  .grillaAli .tituloAli {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 820px) {
+  .grillaAli .tituloAli {
+    font-size: 30px;
+  }
+}
+.grillaAli .parrafoAli {
+  text-align: center;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 1, 5;
+}
+@media screen and (min-width: 620px) {
+  .grillaAli .parrafoAli {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 820px) {
+  .grillaAli .parrafoAli {
+    text-align: center;
+    font-size: 19px;
+  }
+}
+.grillaAli .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 420px) {
+  .grillaAli .galeria div .imgAli {
+    height: auto;
+    width: 400px;
+  }
+}
+@media screen and (min-width: 620px) {
+  .grillaAli .galeria div .imgAli {
+    height: auto;
+    width: 500px;
+  }
+}
+@media screen and (min-width: 830px) {
+  .grillaAli .galeria div .imgAli {
+    height: auto;
+    width: 400px;
+  }
+}
+@media screen and (min-width: 980px) {
+  .grillaAli .galeria div .imgAli {
+    height: auto;
+    width: 420px;
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grillaAli .galeria div .imgAli {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .grillaAli .galeria div .imgAli {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .grillaAli .galeria div .imgAli {
+    width: 500px;
+  }
+}
+
+main .contenidoRrr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 25px 60px 25px;
+}
+main .contenidoRrr .tituloSectionRrr {
+  text-align: center;
+  margin: 40px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 22px;
+}
+@media screen and (min-width: 620px) {
+  main .contenidoRrr .tituloSectionRrr {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 820px) {
+  main .contenidoRrr .tituloSectionRrr {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 820px) {
+  main .contenidoRrr .tituloSectionRrr {
+    font-size: 30px;
+  }
+}
+main .contenidoRrr .p1,
+main .contenidoRrr .p2 {
+  text-align: start;
+  font-size: 14px;
+}
+@media screen and (min-width: 620px) {
+  main .contenidoRrr .p1,
+main .contenidoRrr .p2 {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 820px) {
+  main .contenidoRrr .p1,
+main .contenidoRrr .p2 {
+    text-align: center;
+    font-size: 19px;
+  }
+}
+main .contenidoRrr .videoRrr {
+  border-radius: 20px;
+  line-height: 0%;
+  margin-top: 25px;
+  width: 500px;
+  height: 250px;
+  max-width: 100%;
+  max-height: 100%;
+}
+@media screen and (min-width: 820px) {
+  main .contenidoRrr .videoRrr {
+    margin-top: 25px;
+    height: 500px;
+    width: 900px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 819px) {
+  main .contenidoRrr .videoRrr {
+    margin-top: 25px;
+    height: 400px;
+    width: 800px;
+    max-width: 100%;
+  }
+}
+main .otrosIntereses hr {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+main .otrosIntereses h3 {
+  text-align: center;
+  color: #475176;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 720px) {
+  main .otrosIntereses h3 {
+    font-size: 27px;
+  }
+}
+main .enlacesExternos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1100px;
+  margin-bottom: 10%;
+}
+@media screen and (min-width: 720px) {
+  main .enlacesExternos {
+    margin: auto auto 5% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+main .enlacesExternos .card {
+  height: auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  max-width: 70vw;
+  margin: 20px;
+}
+main .enlacesExternos .card a {
+  text-decoration: none;
+}
+main .enlacesExternos .card img {
+  height: auto;
+  width: 100%;
+}
+main .enlacesExternos .card .nota {
+  padding: 10px;
+}
+main .enlacesExternos .card .nota h4 {
+  color: black;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 18px;
+}
+main .enlacesExternos .card .parrafoCard {
+  color: black;
+  text-align: start;
+  font-weight: lighter;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+main .listadoDocumentales {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 820px) {
+  main .listadoDocumentales {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 5fr;
+    width: 100%;
+  }
+}
+main .listadoDocumentales .documental {
+  border-radius: 20px;
+  background-color: rgb(250, 242, 242);
+  color: black;
+  margin: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+main .listadoDocumentales .documental h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+@media screen and (min-width: 620px) {
+  main .listadoDocumentales .documental h2 {
+    font-size: 20px;
+  }
+}
+main .listadoDocumentales .documental .parrafoVideo {
+  margin: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+@media screen and (min-width: 620px) {
+  main .listadoDocumentales .documental .parrafoVideo {
+    font-size: 16px;
+  }
+}
+main .listadoDocumentales .documental iframe {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 5px auto;
+  width: 530;
+  height: auto;
+  max-width: 100%;
+  max-height: auto;
+  border-radius: 20px;
+}
+@media screen and (min-width: 820px) {
+  main .listadoDocumentales .documental iframe {
+    width: 500px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 819px) {
+  main .listadoDocumentales .documental iframe {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+.contenedorGralContacto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+  background-color: #9ca3bd;
+}
+
+form {
+  background-color: #5A6384;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5% 5% 5% 5%;
+  padding: 10px 15px 10px 15px;
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+}
+
+label {
+  font-size: 18px;
+  color: white;
+  margin: 2px;
+}
+
+textarea {
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+input, .submit {
+  line-height: 0;
+  font-size: 14px;
+  padding: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 820px) {
+  form {
+    width: 50%;
+  }
+  input {
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 819px) {
+  form {
+    width: 80%;
+  }
+  input {
+    padding: 15px;
+  }
+}/*# sourceMappingURL=estilos.css.map */

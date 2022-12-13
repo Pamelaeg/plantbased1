@@ -1,0 +1,41 @@
+header, footer{
+    background-color: $color-primary;
+}
+
+header{
+    font-size: 15px;
+    opacity: 0.9;
+position: sticky;
+top: 0;
+z-index: 10;}
+
+.nav-item{padding-left: 20px;
+    padding-right: 20px;}
+
+.logo {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-right: 0%;
+        width: 0%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+main{margin-bottom: auto;
+}
+
+
+footer{position: absolute;
+    bottom: 0;
+    width: 100%;}
+
+.iconoRedes{padding-left: 10px;
+padding-right: 10px;}

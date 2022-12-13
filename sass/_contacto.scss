@@ -1,0 +1,64 @@
+
+.contenedorGralContacto {display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+    background-color: #9ca3bd;
+}
+
+form {
+    background-color: #5A6384;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5% 5% 5% 5%;
+    padding: 10px 15px 10px 15px;
+    width: 80%;
+    height: auto;
+    border-radius: 20px;}
+
+label {
+    font-size: 18px;
+    color: white;
+    margin: 2px;
+}
+
+textarea {border: 0;
+    border-radius: 10px;
+margin-bottom: 20px ;}
+
+input, .submit {
+    line-height: 0;
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+
+@media screen and (min-width: 820px) {
+
+    form {
+        width: 50%;
+    }
+    
+    input {
+        padding: 15px;
+    }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 819px) {
+
+        form {
+            width: 80%;
+        }
+        
+        input {
+            padding: 15px;
+        }
+        
+        }
